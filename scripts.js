@@ -40,3 +40,24 @@ greenS.addEventListener("input", updateColor);
 blueS.addEventListener("input", updateColor);
 
 updateColor();
+
+
+const downloadB = document.getElementById("downloadBtn");
+
+downloadB.addEventListener("click", function() {
+const entireEle = document.querySelector(".container");
+
+  
+html2canvas(entireEle).then(canvas => {
+const downloadLink =  document.createElement("a");
+  downloadLink.download = "profilebyhlwn.png";
+  downloadLink.href = canvas.toDataURL();
+  downloadLink.click();
+});
+});
+  
+
+
+
+
+}
