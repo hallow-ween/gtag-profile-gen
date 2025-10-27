@@ -54,8 +54,26 @@ const downloadLink =  document.createElement('a');
 downloadLink.href = URL.createObjectURL(blob);
   downloadLink.download = "profilebyhlwn.png";
   downloadLink.click();
-  setTimeout (() => {
- window.open(downloadLink.href, "_blank");}, 100);
 });
 });
 });
+
+const openB = document.getElementById("openBtn");
+
+openB.addEventListener("click", function() {
+const entireEle = document.querySelector(".container");
+
+ const newWindow = window.open('', "_blank");
+  
+  html2canvas(entireEle).then(canvas => {
+canvas.toBlob(function(blob) {
+  const imgURL = URL.createObjectURL(blob);
+ 
+  
+  newWindow.location.href = imgURL;
+    });
+  });
+});
+
+
+                            
