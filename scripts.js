@@ -56,8 +56,3 @@ const downloadLink =  document.createElement("a");
 });
 });
   
-
-
-
-
-}
