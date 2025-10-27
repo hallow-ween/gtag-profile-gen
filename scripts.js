@@ -1,6 +1,6 @@
 function detectedUA() {
 const ua = navigator.userAgent;
-const chromeWeb = /Chrome/.test(ua) && !/Edge|OPR/.test(ua);
+const chromeWeb = /Chrome|CriOS/.test(ua) && !/Edge|OPR/.test(ua);
 const device = /iPhone|Android|iPod|iPad/.test(ua);
 return chromeWeb && device;
 }
