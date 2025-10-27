@@ -49,10 +49,12 @@ const entireEle = document.querySelector(".container");
 
   
 html2canvas(entireEle).then(canvas => {
-const downloadLink =  document.createElement("a");
-  downloadLink.download = "profilebyhlwn.png";
-  downloadLink.href = canvas.toDataURL();
+canvas.toBlob(function(blob) {
+const downloadLink =  document.createElement('a');
+downloadLink.href = URL.createObjectURL(blob);
+downloadLink.download = "profilebyhlwn.png";
+
   downloadLink.click();
 });
 });
-  
+});
