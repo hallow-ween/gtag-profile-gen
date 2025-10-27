@@ -4,7 +4,7 @@ const chromeWeb = /Chrome|CriOS/.test(ua) && !/Edge|OPR/.test(ua);
 const device = /iPhone|Android|iPod|iPad/.test(ua);
 const testPara = document.getElementById("test");
 testPara.textContent = ua;
-  return chromeWeb && device;
+  return chromeWeb || device;
 }
 
 if (detectedUA()) {
