@@ -2,12 +2,15 @@ function detectedUA() {
 const ua = navigator.userAgent;
 const chromeWeb = /Chrome|CriOS/.test(ua) && !/Edge|OPR/.test(ua);
 const device = /iPhone|Android|iPod|iPad/.test(ua);
-return chromeWeb && device;
+const testPara = document.getElementById("test");
+testPara.textContent = ua;
+  return chromeWeb && device;
 }
 
 if (detectedUA()) {
 alert("⚠️ This tool might function incorrectly on your device and browser! Please switch to a different browser"); 
 }
+
 
 const redS =    
   document.getElementById("RedSlider");
