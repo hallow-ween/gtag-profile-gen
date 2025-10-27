@@ -1,11 +1,11 @@
 function detectedUA() {
 const ua = navigator.userAgent;
 const chromeWeb = /Chrome/.test(ua) && !/Edge|OPR/.test(ua);
-const device = /Iphone|Andriod|Ipod|Ipad/.test(ua);
+const device = /IPhone|Android|IPod|IPad/.test(ua);
 return chromeWeb && device;
 }
 
-if (detectedUA)) {
+if (detectedUA()) {
 alert("⚠️ This tool might function incorrectly on your device and browser! Please switch to a different browser"); 
 }
 
