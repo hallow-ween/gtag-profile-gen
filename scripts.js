@@ -53,7 +53,7 @@ canvas.toBlob(function(blob) {
 const downloadLink =  document.createElement('a');
 downloadLink.href = URL.createObjectURL(blob);
 downloadLink.download = "profilebyhlwn.png";
-
+ window.open(url, "_blank");
   downloadLink.click();
 });
 });
