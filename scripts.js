@@ -8,7 +8,7 @@ testPara.textContent = ua;
 }
 
 if (detectedUA()) {
-alert("⚠️ This tool might function incorrectly on your device and browser! Please switch to a different browser"); 
+alert("⚠️ This tool might function incorrectly on your device and browser! Please switch to a different browser. You can still save your profile picture by taking a screenshot!"); 
 }
 
 
