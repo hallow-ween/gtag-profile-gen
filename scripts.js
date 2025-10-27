@@ -52,9 +52,10 @@ html2canvas(entireEle).then(canvas => {
 canvas.toBlob(function(blob) {
 const downloadLink =  document.createElement('a');
 downloadLink.href = URL.createObjectURL(blob);
- window.open(downloadLink.href, "_blank");
   downloadLink.download = "profilebyhlwn.png";
   downloadLink.click();
+  setTimeout (() => {
+ window.open(downloadLink.href, "_blank");}, 100);
 });
 });
 });
