@@ -65,13 +65,10 @@ const entireEle = document.querySelector(".container");
 
  const newWindow = window.open('', "_blank");
   
-  html2canvas(entireEle).then(canvas => {
-canvas.toBlob(function(blob) {
-  const imgURL = URL.createObjectURL(blob);
- 
-  
-  newWindow.location.href = imgURL;
-    });
+html2canvas(entireEle).then(canvas => {
+    const imgURL = canvas.toDataURL(); 
+    newWindow.document.write(`<img src="${imgURL}">`);
+    newWindow.document.title = "Profile Pic :)";
   });
 });
 
