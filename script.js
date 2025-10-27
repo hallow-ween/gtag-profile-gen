@@ -29,9 +29,9 @@ const updatedColor =
 colorBox.style.backgroundColor =
   updatedColor;
 
-RedVal.textContent = Red;
-GreenVal.textContent = Green;
-BlueVal.textContent = Blue;
+redVal.textContent = Red;
+greenVal.textContent = Green;
+blueVal.textContent = Blue;
 
 }
 
