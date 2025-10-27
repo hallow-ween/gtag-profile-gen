@@ -9,9 +9,6 @@ if (detectedUA()) {
 alert("⚠️ This tool might function incorrectly on your device and browser! Please switch to a different browser"); 
 }
 
-
-
-
 const redS =    
   document.getElementById("RedSlider");
 const blueS = 
