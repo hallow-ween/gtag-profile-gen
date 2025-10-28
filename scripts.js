@@ -120,7 +120,8 @@ testPara.textContent = currentImg;
   
   switch (currentImg) {
 case 0:
-everyImage.style.opacity = 0;
+everyImage.style.opacity = 1;
+hats.forEach(hat => hat.style.opacity = 0);
   break;
 case 1: 
 tophat.style.opacity = 1;
