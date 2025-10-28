@@ -115,8 +115,8 @@ const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat];
 function updateImage() {
   
   hats.forEach(hat => hat.style.opacity = 0);
-  //const testPara = document.getElementById("test");
-//testPara.textContent = currentImg;
+  const testPara = document.getElementById("test");
+testPara.textContent = currentImg;
   
   switch (currentImg) {
 case 0:
