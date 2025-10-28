@@ -87,4 +87,75 @@ html2canvas(entireEle).then(canvas => {
 });
 
 
-                            
+
+let currentImg = 0;
+let allImages = 6;
+let highImages = 6;
+let lowImages = 0;
+
+const tophat =
+  document.getElementById("1");
+const bananahat =
+  document.getElementById("2");
+const chefshat =
+  document.getElementById("3");
+const cowboyhat =
+  document.getElementById("4");
+const headphones =
+  document.getElementById("5");
+const partyhat =
+  document.getElementById("6");
+const everyImage =
+  document.getElementById("allCos");
+
+function updateImage() {
+const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat];
+  hats.forEach(hat => hat.style.opacity = 0);
+  
+  switch (currentImg) {
+case 0:
+everyImage.style.opacity = 0;
+  break;
+case 1: 
+tophat.style.opacity = 1;
+  break;
+case 2: 
+bananahat.style.opacity = 1;
+tophat.style.opacity = 0;
+  break;
+case 3: 
+chefshat.style.opacity = 1;
+bananahat.style.opacity = 0;
+  break;
+case 4:
+cowboyhat.style.opacity = 1;
+chefshat.style.opacity = 0;
+  break;
+case 5: 
+headphones.style.opacity = 1;
+cowboyhat.style.opacity = 0;
+break;
+case 6:
+partyhat.style.opacity = 1;
+headphones.style.opacity = 0;
+break;
+}
+}
+
+function forward() {
+currentImg++;
+  if (currentImg > highImages) {
+ currentImg = 0;
+  }
+updateImage()
+}
+
+function back() {
+currentImg--;
+
+  if (currentImg < lowImages) {
+currentImg = 6;    
+  }
+  updateImage()
+}
+                          
