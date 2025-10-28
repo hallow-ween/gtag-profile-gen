@@ -145,18 +145,14 @@ break;
 
 function forward() {
 currentImg++;
-  if (currentImg > highImages) {
- currentImg = 0;
-  }
-updateImage()
+  if (currentImg > highImages) currentImg = 0;
+updateImage();
 }
 
 function back() {
 currentImg--;
 
-  if (currentImg < lowImages) {
-currentImg = 6;    
-  }
-  updateImage()
+if (currentImg < 0) currentImg = allImages;
+  updateImage();
 }
                           
