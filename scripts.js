@@ -108,10 +108,11 @@ const partyhat =
 const everyImage =
   document.getElementById("allCos");
 
-function updateImage() {
 const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat];
   hats.forEach(hat => hat.style.opacity = 0);
   
+
+function updateImage() {
   switch (currentImg) {
 case 0:
 everyImage.style.opacity = 0;
