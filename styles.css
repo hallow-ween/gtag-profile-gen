@@ -73,3 +73,11 @@ color: rgb(0, 255, 0);
 #BlueV {
 color: rgb(0, 0, 255);
 }
+
+cosmeticButtons button {
+width: 100px;
+height: 25px;
+border: 1px solid black;
+padding: 5px;
+color: black;
+}
