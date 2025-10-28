@@ -113,6 +113,8 @@ const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat];
   
 
 function updateImage() {
+  hats.forEach(hat => hat.style.opacity = 0);
+  
   switch (currentImg) {
 case 0:
 everyImage.style.opacity = 0;
@@ -122,23 +124,18 @@ tophat.style.opacity = 1;
   break;
 case 2: 
 bananahat.style.opacity = 1;
-tophat.style.opacity = 0;
   break;
 case 3: 
 chefshat.style.opacity = 1;
-bananahat.style.opacity = 0;
   break;
 case 4:
 cowboyhat.style.opacity = 1;
-chefshat.style.opacity = 0;
   break;
 case 5: 
 headphones.style.opacity = 1;
-cowboyhat.style.opacity = 0;
 break;
 case 6:
 partyhat.style.opacity = 1;
-headphones.style.opacity = 0;
 break;
 }
 }
