@@ -117,7 +117,6 @@ function updateImage() {
   hats.forEach(hat => hat.style.opacity = 0);
   //const testPara = document.getElementById("test");
 //testPara.textContent = currentImg;
-everyImage.style.opacity = 0;
   
   switch (currentImg) {
 case 0:
@@ -145,15 +144,16 @@ break;
 }
 
 function forward() {
-currentImg++;
-  if (currentImg > highImages) currentImg = 0;
+if (currentImg < 6) {
+  currentImg++;
 updateImage();
+}
 }
 
 function back() {
-currentImg--;
-
-if (currentImg < 0) currentImg = allImages;
+if (currentImg > 0) {
+  currentImg--;
   updateImage();
+}
 }
                           
