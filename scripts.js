@@ -105,10 +105,14 @@ const headphones =
   document.getElementById("5");
 const partyhat =
   document.getElementById("6");
+const ushanka =
+  document.getElementById("7");
+const fez =
+  document.getElementById("8");
 const everyImage =
   document.getElementById("allCos");
 
-const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat];
+const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez];
   hats.forEach(hat => hat.style.opacity = 0);
   
 
@@ -141,11 +145,17 @@ break;
 case 6:
 partyhat.style.opacity = 1;
 break;
+case 7:
+ushanka.style.opacity = 1;
+break;
+case 6:
+ushanka.style.opacity = 1;
+break;  
 }
 }
 
 function forward() {
-if (currentImg < 6) {
+if (currentImg < 8) {
   currentImg++;
 updateImage();
 }
