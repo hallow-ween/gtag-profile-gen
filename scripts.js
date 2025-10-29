@@ -89,9 +89,9 @@ html2canvas(entireEle).then(canvas => {
 
 
 let currentImg = 0;
-let allImages = 6;
-let highImages = 6;
-let lowImages = 0;
+let allCosmetics = 9;
+let highCosmetics = 9;
+let lowCosmetics = 0;
 
 const tophat =
   document.getElementById("1");
@@ -109,10 +109,12 @@ const ushanka =
   document.getElementById("7");
 const fez =
   document.getElementById("8");
+const pumpkin = 
+  document.getElementById("9")
 const everyImage =
   document.getElementById("allCos");
 
-const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez];
+const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez, pumpkin];
   hats.forEach(hat => hat.style.opacity = 0);
   
 
@@ -151,11 +153,14 @@ break;
 case 8:
 fez.style.opacity = 1;
 break;  
+case 9:
+pumpkin.style.opacity = 1;
+break;
 }
 }
 
 function forward() {
-if (currentImg < 8) {
+if (currentImg < highCosmetics) {
   currentImg++;
 updateImage();
 }
