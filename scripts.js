@@ -148,8 +148,8 @@ break;
 case 7:
 ushanka.style.opacity = 1;
 break;
-case 6:
-ushanka.style.opacity = 1;
+case 8:
+fez.style.opacity = 1;
 break;  
 }
 }
