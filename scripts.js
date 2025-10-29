@@ -89,8 +89,8 @@ html2canvas(entireEle).then(canvas => {
 
 
 let currentImg = 0;
-let allCosmetics = 9;
-let highCosmetics = 9;
+let allCosmetics = 11;
+let highCosmetics = 11;
 let lowCosmetics = 0;
 
 const tophat =
@@ -111,10 +111,14 @@ const fez =
   document.getElementById("8");
 const pumpkin = 
   document.getElementById("9")
+const aac = 
+  document.getElementById("10")
+const fingerpaint = 
+  document.getElementById("11")
 const everyImage =
   document.getElementById("allCos");
 
-const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez, pumpkin];
+const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez, pumpkin, aac, fingerpaint];
   hats.forEach(hat => hat.style.opacity = 0);
   
 
@@ -155,6 +159,12 @@ fez.style.opacity = 1;
 break;  
 case 9:
 pumpkin.style.opacity = 1;
+break;
+case 10:
+aac.style.opacity = 1;
+break;  
+case 11:
+fingerpaint.style.opacity = 1;
 break;
 }
 }
