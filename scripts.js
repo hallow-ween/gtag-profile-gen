@@ -168,7 +168,7 @@ break;
 case 11:
 fingerpaint.style.opacity = 1;
 break;
-case:
+case 12:
 pumpkinpiehat.style.opacity = 1;
 break;
 }
