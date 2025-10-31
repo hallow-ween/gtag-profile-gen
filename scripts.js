@@ -120,7 +120,7 @@ const pumpkinpiehat =
 const everyImage =
   document.getElementById("allCos");
 
-const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez, pumpkin, aac, fingerpaint];
+const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez, pumpkin, aac, fingerpaint, pumpkinpiehat];
   hats.forEach(hat => hat.style.opacity = 0);
   
 
