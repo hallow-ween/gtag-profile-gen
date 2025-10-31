@@ -110,11 +110,13 @@ const ushanka =
 const fez =
   document.getElementById("8");
 const pumpkin = 
-  document.getElementById("9")
+  document.getElementById("9");
 const aac = 
-  document.getElementById("10")
+  document.getElementById("10");
 const fingerpaint = 
-  document.getElementById("11")
+  document.getElementById("11");
+const pumpkinpiehat =
+  document.getElementById("12");
 const everyImage =
   document.getElementById("allCos");
 
