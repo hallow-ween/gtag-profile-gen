@@ -89,8 +89,8 @@ html2canvas(entireEle).then(canvas => {
 
 
 let currentImg = 0;
-let allCosmetics = 11;
-let highCosmetics = 11;
+let allCosmetics = 12;
+let highCosmetics = 12;
 let lowCosmetics = 0;
 
 const tophat =
@@ -167,6 +167,9 @@ aac.style.opacity = 1;
 break;  
 case 11:
 fingerpaint.style.opacity = 1;
+break;
+case:
+pumpkinpiehat.style.opacity = 1;
 break;
 }
 }
