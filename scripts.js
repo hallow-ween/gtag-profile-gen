@@ -126,7 +126,7 @@ const pattern =
 const stripe =
   document.getElementById("16");
 const catears =
-  document.getElementByIf("17");
+  document.getElementById("17");
 const everyImage =
   document.getElementById("allCos");
 
