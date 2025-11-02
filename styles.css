@@ -81,3 +81,16 @@ border: 1px solid black;
 padding: 5px;
 color: black;
 }
+
+
+#RedC {
+color: rgb(255, 0, 0);
+}
+
+#GreenC {
+color: rgb(0, 255, 0);
+}
+
+#BlueC {
+color: rgb(0, 0, 255);
+}
