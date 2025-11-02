@@ -249,7 +249,7 @@ redValC.textContent = "Red: " + r;
 greenValC.textContent = "Green: " + g;
 blueValC.textContent = "Blue: " + b;
 
-
+rgb.style.color = `rgb(${rr}, ${gg}, ${bb})`;
 
 }
 
