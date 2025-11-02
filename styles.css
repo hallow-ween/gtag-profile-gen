@@ -94,3 +94,7 @@ color: rgb(0, 255, 0);
 #blueC {
 color: rgb(0, 0, 255);
 }
+
+#rgb {
+-webkit-text-stroke: 0.5px black;
+}
