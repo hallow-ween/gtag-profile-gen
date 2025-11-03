@@ -70,8 +70,8 @@ gap: 5px;
 position: absolute;
 top: 0px;
 right: 0px;
-height: 30px;
-width: 30px;
+height: 40px;
+width: 40px;
 }
 
 
@@ -112,7 +112,6 @@ color: rgb(0, 0, 255);
 -webkit-text-stroke: 0.5px black;
 }
 
-
 ul {
 list-style-type: none;
 margin: 0px;
@@ -135,5 +134,4 @@ text-decoration: none;
 
 ul li a:hover {
 background-color: #9e7041;
-
 }
