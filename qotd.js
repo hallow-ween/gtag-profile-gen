@@ -28,7 +28,6 @@ function dailyQuote() {
 	}
 
 
-document.addEventListener("DOMContentLoaded", () => {
+
 const quoteEle = document.getElementById("quoteEle");
 quoteEle.textContent = dailyQuote();
-});
