@@ -135,3 +135,13 @@ text-decoration: none;
 ul li a:hover {
 background-color: #9e7041;
 }
+
+.qotdBox {
+background-color: #815437; 
+width: 600px;
+height: 500px;
+}
+
+.qotdt {
+color: white;
+}
