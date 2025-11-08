@@ -145,3 +145,14 @@ height: 400px;
 .qotdt {
 color: white;
 }
+
+#quoteEle {
+padding: auto;
+text-align: center; 
+}
+
+#headqotd {
+
+padding: auto;
+text-align: center; 
+}
