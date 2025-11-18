@@ -89,8 +89,8 @@ html2canvas(entireEle).then(canvas => {
 
 
 let currentImg = 0;
-let allCosmetics = 17;
-let highCosmetics = 17;
+let allCosmetics = 20;
+let highCosmetics = 20;
 let lowCosmetics = 0;
 
 const tophat =
@@ -127,10 +127,16 @@ const stripe =
   document.getElementById("16");
 const catears =
   document.getElementById("17");
+const santahat =
+  document.getElementById("18");
+const snowflake =
+  document.getElementById("19");
+const elfhat =
+  document.getElementById("20");
 const everyImage =
   document.getElementById("allCos");
 
-const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez, pumpkin, aac, fingerpaint, pumpkinpiehat, orangebeanie, bluebeanie, pattern, stripe, catears];
+const hats = [tophat, bananahat, chefshat, cowboyhat, headphones, partyhat, ushanka, fez, pumpkin, aac, fingerpaint, pumpkinpiehat, orangebeanie, bluebeanie, pattern, stripe, catears, santahat, elfhat, snowflake];
   hats.forEach(hat => hat.style.opacity = 0);
   
 
@@ -195,6 +201,15 @@ stripe.style.opacity = 1;
 break;
 case 17:
 catears.style.opacity = 1;
+break;
+case 18:
+santahat.style.opacity = 1;
+break;
+case 19:
+snowflake.style.opacity = 1;
+break;
+case 20:
+elfhat.style.opacity = 1;
 break;
   }
 }
